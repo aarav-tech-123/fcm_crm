@@ -33,7 +33,7 @@ const getAppointmentDetails = async (appointmentId) => {
        a.created_by        AS agent_id,
        u.name              AS agent_name,
        u.fcm_token         AS agent_token,
-       c.name              AS contact_name
+       c.client_name              AS contact_name
      FROM [CRM].[dbo].[ContactAppointments] a
      INNER JOIN [CRM].[dbo].[Users]    u ON u.id = a.created_by
      INNER JOIN [CRM].[dbo].[Contacts] c ON c.id = a.contact_id

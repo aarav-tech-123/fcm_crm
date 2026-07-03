@@ -28,8 +28,8 @@ const getCallbackDetails = async (callbackId) => {
        cb.created_by       AS agent_id,
        u.name              AS agent_name,
        u.fcm_token         AS agent_token,
-       c.name              AS contact_name,
-       c.mobile            AS contact_phone
+       c.client_name              AS contact_name,
+       c.contact_number            AS contact_phone
      FROM [CRM].[dbo].[ContactCallbacks] cb
      INNER JOIN [CRM].[dbo].[Users]    u ON u.id = cb.created_by
      INNER JOIN [CRM].[dbo].[Contacts] c ON c.id = cb.contact_id

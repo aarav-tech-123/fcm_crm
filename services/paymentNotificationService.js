@@ -28,7 +28,7 @@ const getPaymentDetails = async (paymentId) => {
        ps.payment_date,
        ps.status,
        ps.description,
-       c.name          AS contact_name,
+       c.client_name          AS contact_name,
        c.assigned_to   AS agent_id,
        u.name          AS agent_name,
        u.fcm_token     AS agent_token

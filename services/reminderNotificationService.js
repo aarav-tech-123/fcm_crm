@@ -30,7 +30,7 @@ const getReminderDetails = async (reminderId) => {
        r.created_by      AS agent_id,
        u.name            AS agent_name,
        u.fcm_token       AS agent_token,
-       c.name            AS contact_name
+       c.client_name            AS contact_name
      FROM [CRM].[dbo].[ContactReminders] r
      INNER JOIN [CRM].[dbo].[Users]    u ON u.id = r.created_by
      INNER JOIN [CRM].[dbo].[Contacts] c ON c.id = r.contact_id
