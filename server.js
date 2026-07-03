@@ -11,7 +11,7 @@ const notificationRoutes = require('./routes/notificationRoutes');
 const { logger } = require('./utils/notificationHelper');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 // ─── Security Middleware ───────────────────────────────────────────────────────
 app.use(helmet());
