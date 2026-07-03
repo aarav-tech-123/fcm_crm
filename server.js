@@ -13,6 +13,8 @@ const { logger } = require('./utils/notificationHelper');
 const app = express();
 const PORT = process.env.PORT;
 
+app.set("trust proxy", 1);
+
 // ─── Security Middleware ───────────────────────────────────────────────────────
 app.use(helmet());
 app.use(cors({ origin: process.env.ALLOWED_ORIGINS?.split(',') || '*' }));
