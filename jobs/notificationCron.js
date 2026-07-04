@@ -30,7 +30,7 @@ const runJob = async (name, fn) => {
 // Uses reminder_sent flag — requires adding column: ALTER TABLE ContactCallbacks ADD reminder_sent BIT DEFAULT 0
 
 const callbackReminderJob = cron.schedule(
-  "*/5 * * * *",
+  "* * * * *",
   () =>
     runJob("Callback Reminders", async () => {
       const result = await query(`
@@ -38,7 +38,7 @@ const callbackReminderJob = cron.schedule(
 
         SELECT id
         FROM [CRM].[dbo].[ContactCallbacks]
-        WHERE status = 'pending'
+        WHERE status = 'Pending'
           AND ISNULL(reminder_sent, 0) = 0
           AND CAST(callback_date AS DATE) = CAST(@NowIST AS DATE)
           AND CAST(callback_time AS TIME) BETWEEN
