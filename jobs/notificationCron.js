@@ -57,8 +57,8 @@ const callbackReminderJob = cron.schedule(
         );
       }
 
-      console.log(result.recordset);
-      
+      console.log("Result : ", result.recordset);
+
       if (result.recordset.length) {
         logger.info(
           `[CRON] Callback reminders sent: ${result.recordset.length}`

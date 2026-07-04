@@ -16,6 +16,7 @@ initializeFirebase();
 // ───────────────────────────────────────────────────────────────
 
 const sendToDevice = async (token, title, body, data = {}) => {
+  console.log(`sendToDevice called | Token: ${token} | Title: ${title} | Body: ${body} | Data: ${JSON.stringify(data)}`);
   try {
     const payload = buildFCMPayload(token, title, body, data);
 
@@ -24,7 +25,7 @@ const sendToDevice = async (token, title, body, data = {}) => {
     const response = await getMessaging().send(payload);
 
     console.log(`FCM sent | MsgID: ${response}`);
-    
+
     logger.info(`FCM sent | MsgID: ${response}`);
 
     return {

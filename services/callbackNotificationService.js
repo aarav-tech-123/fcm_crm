@@ -38,7 +38,7 @@ const getCallbackDetails = async (callbackId) => {
   );
 
   console.log(result.recordset[0]);
-  
+
   return result.recordset[0] || null;
 };
 
@@ -86,6 +86,7 @@ const notifyCallbackScheduled = async (callbackId) => {
 // ─── Notify: Callback Reminder (10-min warning, triggered by cron) ────────────
 
 const notifyCallbackReminder = async (callbackId) => {
+  console.log(`notifyCallbackReminder called for callbackId: ${callbackId}`);
   try {
     const cb = await getCallbackDetails(callbackId);
     if (!cb || cb.status !== 'pending') return;
@@ -95,6 +96,8 @@ const notifyCallbackReminder = async (callbackId) => {
     const title = '⏰ Callback Reminder';
     const body  = `Callback with ${cb.contact_name} in ~10 minutes`;
 
+    console.log(`Sending reminder to agent: ${cb.agent_name} | Token: ${cb.agent_token}`);
+    
     if (cb.agent_token) {
       await sendToDevice(cb.agent_token, title, body, {
         type:       'CALLBACK_REMINDER',
@@ -116,6 +119,7 @@ const notifyCallbackReminder = async (callbackId) => {
     console.log(`Callback reminder notification sent | ID: ${callbackId}`);
 
   } catch (err) {
+    console.log(`notifyCallbackReminder error: ${err.message}`);
     logger.error(`notifyCallbackReminder error: ${err.message}`);
     throw err;
   }
