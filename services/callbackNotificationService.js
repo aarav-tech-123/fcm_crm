@@ -50,6 +50,8 @@ const notifyCallbackScheduled = async (callbackId) => {
     const title = '📞 Callback Scheduled';
     const body  = `You have a callback with ${cb.contact_name} on ${when}`;
 
+    console.log(`Callback scheduled: ${callbackId} | Agent: ${cb.agent_name} | Contact: ${cb.contact_name}`);
+    
     if (cb.agent_token) {
       await sendToDevice(cb.agent_token, title, body, {
         type:       'CALLBACK_SCHEDULED',
@@ -84,6 +86,8 @@ const notifyCallbackReminder = async (callbackId) => {
   try {
     const cb = await getCallbackDetails(callbackId);
     if (!cb || cb.status !== 'pending') return;
+
+    console.log(`Callback completed: ${callbackId} | Agent: ${cb.agent_name} | Contact: ${cb.contact_name}`);
 
     const title = '⏰ Callback Reminder';
     const body  = `Callback with ${cb.contact_name} in ~10 minutes`;
