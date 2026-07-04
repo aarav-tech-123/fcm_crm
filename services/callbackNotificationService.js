@@ -89,7 +89,7 @@ const notifyCallbackReminder = async (callbackId) => {
   console.log(`notifyCallbackReminder called for callbackId: ${callbackId}`);
   try {
     const cb = await getCallbackDetails(callbackId);
-    if (!cb || cb.status !== 'pending') return;
+    if (!cb || cb.status !== 'Pending') return;
 
     console.log(`Callback completed: ${callbackId} | Agent: ${cb.agent_name} | Contact: ${cb.contact_name}`);
 
@@ -97,7 +97,7 @@ const notifyCallbackReminder = async (callbackId) => {
     const body  = `Callback with ${cb.contact_name} in ~10 minutes`;
 
     console.log(`Sending reminder to agent: ${cb.agent_name} | Token: ${cb.agent_token}`);
-    
+
     if (cb.agent_token) {
       await sendToDevice(cb.agent_token, title, body, {
         type:       'CALLBACK_REMINDER',
