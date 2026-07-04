@@ -36,6 +36,9 @@ const getCallbackDetails = async (callbackId) => {
      WHERE cb.id = @callbackId`,
     { callbackId }
   );
+
+  console.log(result.recordset[0]);
+  
   return result.recordset[0] || null;
 };
 
@@ -99,6 +102,8 @@ const notifyCallbackReminder = async (callbackId) => {
       });
     }
 
+    console.log(cb);
+
     await logNotification({
       userId:        cb.agent_id,
       type:          'callback_reminder',
@@ -107,6 +112,9 @@ const notifyCallbackReminder = async (callbackId) => {
       referenceId:   callbackId,
       referenceType: 'ContactCallbacks',
     });
+
+    console.log(`Callback reminder notification sent | ID: ${callbackId}`);
+
   } catch (err) {
     logger.error(`notifyCallbackReminder error: ${err.message}`);
     throw err;

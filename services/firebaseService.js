@@ -19,8 +19,12 @@ const sendToDevice = async (token, title, body, data = {}) => {
   try {
     const payload = buildFCMPayload(token, title, body, data);
 
+    console.log(payload);
+
     const response = await getMessaging().send(payload);
 
+    console.log(`FCM sent | MsgID: ${response}`);
+    
     logger.info(`FCM sent | MsgID: ${response}`);
 
     return {
