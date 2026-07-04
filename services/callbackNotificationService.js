@@ -91,12 +91,10 @@ const notifyCallbackReminder = async (callbackId) => {
     const cb = await getCallbackDetails(callbackId);
     if (!cb || cb.status !== 'Pending') return;
 
-    console.log(`Callback completed: ${callbackId} | Agent: ${cb.agent_name} | Contact: ${cb.contact_name}`);
 
     const title = '⏰ Callback Reminder';
     const body  = `Callback with ${cb.contact_name} in ~10 minutes`;
 
-    console.log(`Sending reminder to agent: ${cb.agent_name} | Token: ${cb.agent_token}`);
 
     if (cb.agent_token) {
       await sendToDevice(cb.agent_token, title, body, {
@@ -105,7 +103,6 @@ const notifyCallbackReminder = async (callbackId) => {
       });
     }
 
-    console.log(cb);
 
     await logNotification({
       userId:        cb.agent_id,
@@ -116,10 +113,8 @@ const notifyCallbackReminder = async (callbackId) => {
       referenceType: 'ContactCallbacks',
     });
 
-    console.log(`Callback reminder notification sent | ID: ${callbackId}`);
 
   } catch (err) {
-    console.log(`notifyCallbackReminder error: ${err.message}`);
     logger.error(`notifyCallbackReminder error: ${err.message}`);
     throw err;
   }
@@ -133,7 +128,7 @@ const notifyCallbackCompleted = async (callbackId) => {
     if (!cb) return;
 
     // Notify supervisors / admins that a callback was marked done
-    const adminTokens = await getTokensForRole('Admin');
+    const adminTokens = await getTokensForRole('SuperAdmin', 'Admin');
     const title = '✅ Callback Completed';
     const body  = `${cb.agent_name} completed callback with ${cb.contact_name}`;
 
