@@ -29,27 +29,42 @@ const runJob = async (name, fn) => {
 // Finds pending callbacks where callback_date+callback_time is in ~10 mins
 // Uses reminder_sent flag — requires adding column: ALTER TABLE ContactCallbacks ADD reminder_sent BIT DEFAULT 0
 
-const callbackReminderJob = cron.schedule('*/5 * * * *', () => runJob('Callback Reminders', async () => {
-  const result = await query(`
-    SELECT id FROM [CRM].[dbo].[ContactCallbacks]
-    WHERE status = 'pending'
-      AND ISNULL(reminder_sent, 0) = 0
-      AND CAST(callback_date AS DATE) = CAST(GETDATE() AS DATE)
-      AND CAST(callback_time AS TIME) BETWEEN
-            CAST(CONVERT(VARCHAR(5), DATEADD(MINUTE, 8,  GETDATE()), 108) AS TIME) AND
-            CAST(CONVERT(VARCHAR(5), DATEADD(MINUTE, 12, GETDATE()), 108) AS TIME)
-  `);
+const callbackReminderJob = cron.schedule(
+  "*/5 * * * *",
+  () =>
+    runJob("Callback Reminders", async () => {
+      const result = await query(`
+        DECLARE @NowIST DATETIME = DATEADD(MINUTE, 330, GETUTCDATE());
 
-  for (const row of result.recordset) {
-    await notifyCallbackReminder(row.id);
-    await query(
-      `UPDATE [CRM].[dbo].[ContactCallbacks] SET reminder_sent = 1 WHERE id = @id`,
-      { id: row.id }
-    );
-  }
+        SELECT id
+        FROM [CRM].[dbo].[ContactCallbacks]
+        WHERE status = 'pending'
+          AND ISNULL(reminder_sent, 0) = 0
+          AND CAST(callback_date AS DATE) = CAST(@NowIST AS DATE)
+          AND CAST(callback_time AS TIME) BETWEEN
+                CAST(DATEADD(MINUTE, 8, @NowIST) AS TIME)
+            AND CAST(DATEADD(MINUTE, 12, @NowIST) AS TIME)
+      `);
 
-  if (result.recordset.length) logger.info(`[CRON] Callback reminders sent: ${result.recordset.length}`);
-}), { scheduled: false });
+      for (const row of result.recordset) {
+        await notifyCallbackReminder(row.id);
+
+        await query(
+          `UPDATE [CRM].[dbo].[ContactCallbacks]
+           SET reminder_sent = 1
+           WHERE id = @id`,
+          { id: row.id }
+        );
+      }
+
+      if (result.recordset.length) {
+        logger.info(
+          `[CRON] Callback reminders sent: ${result.recordset.length}`
+        );
+      }
+    }),
+  { scheduled: false }
+);
 
 // ─── 2. ContactAppointments — 1-hour reminder (every 10 min) ──────────────────
 // Requires: ALTER TABLE ContactAppointments ADD reminder_sent BIT DEFAULT 0
