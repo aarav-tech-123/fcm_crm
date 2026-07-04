@@ -88,7 +88,7 @@ const notifyReminderCreated = async (reminderId) => {
 const notifyReminderDue = async (reminderId) => {
   try {
     const rem = await getReminderDetails(reminderId);
-    if (!rem || rem.status === 'completed') return;
+    if (!rem || rem.status === 'Completed') return;
 
     const emoji = priorityEmoji[rem.priority] || '⏰';
     const title = `${emoji} Reminder Due Now`;

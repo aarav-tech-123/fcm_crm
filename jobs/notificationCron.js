@@ -95,26 +95,59 @@ const appointmentReminderJob = cron.schedule('*/10 * * * *', () => runJob('Appoi
 // ─── 3. ContactReminders — fire at reminder_date (every 5 min) ────────────────
 // Requires: ALTER TABLE ContactReminders ADD reminder_sent BIT DEFAULT 0
 
-const reminderDueJob = cron.schedule('*/5 * * * *', () => runJob('Reminder Due Alerts', async () => {
-  const result = await query(`
-    SELECT id FROM [CRM].[dbo].[ContactReminders]
-    WHERE status <> 'completed'
-      AND ISNULL(reminder_sent, 0) = 0
-      AND reminder_date BETWEEN
-            DATEADD(MINUTE, -2, GETDATE()) AND
-            DATEADD(MINUTE,  3, GETDATE())
-  `);
+const reminderDueJob = cron.schedule(
+  "*/5 * * * *",
+  () =>
+    runJob("Reminder Due Alerts", async () => {
+      try {
+        const result = await query(`
+          DECLARE @NowIST DATETIME = DATEADD(MINUTE, 330, GETUTCDATE());
 
-  for (const row of result.recordset) {
-    await notifyReminderDue(row.id);
-    await query(
-      `UPDATE [CRM].[dbo].[ContactReminders] SET reminder_sent = 1 WHERE id = @id`,
-      { id: row.id }
-    );
-  }
+          SELECT id
+          FROM [CRM].[dbo].[ContactReminders]
+          WHERE status <> 'Completed'
+            AND reminder_date <= @NowIST
+            AND (
+                  last_notification_sent IS NULL
+                  OR DATEADD(MINUTE, 15, last_notification_sent) <= @NowIST
+                )
+        `);
 
-  if (result.recordset.length) logger.info(`[CRON] Reminder due alerts sent: ${result.recordset.length}`);
-}), { scheduled: false });
+        console.log("Due Reminders:", result.recordset);
+
+        for (const row of result.recordset) {
+          try {
+            await notifyReminderDue(row.id);
+
+            await query(`
+              DECLARE @NowIST DATETIME = DATEADD(MINUTE, 330, GETUTCDATE());
+
+              UPDATE [CRM].[dbo].[ContactReminders]
+              SET last_notification_sent = @NowIST
+              WHERE id = @id
+            `, {
+              id: row.id,
+            });
+
+            logger.info(
+              `[CRON] Reminder notification sent for Reminder ID: ${row.id}`
+            );
+          } catch (err) {
+            logger.error(
+              `[CRON] Failed to send reminder ${row.id}: ${err.message}`
+            );
+          }
+        }
+
+        logger.info(
+          `[CRON] Processed ${result.recordset.length} reminder(s)`
+        );
+      } catch (err) {
+        logger.error(`[CRON] Reminder Job Error: ${err.message}`);
+      }
+    }),
+  { scheduled: false }
+);
 
 // ─── 4. PaymentStructure — due tomorrow (daily 9 AM IST = 03:30 UTC) ──────────
 // Requires: ALTER TABLE PaymentStructure ADD due_reminder_sent BIT DEFAULT 0
