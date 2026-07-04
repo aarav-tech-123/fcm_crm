@@ -57,7 +57,6 @@ const callbackReminderJob = cron.schedule(
         );
       }
 
-      console.log("Result : ", result.recordset);
 
       if (result.recordset.length) {
         logger.info(
@@ -113,7 +112,6 @@ const reminderDueJob = cron.schedule(
                 )
         `);
 
-        console.log("Due Reminders:", result.recordset);
 
         for (const row of result.recordset) {
           try {
