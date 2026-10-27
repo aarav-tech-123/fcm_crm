@@ -1,0 +1,56 @@
+[2026-06-24 16:29:19] ERROR: Failed to start server: Failed to connect to 103.112.15.19:1433 - Could not connect (sequence)
+[2026-06-24 16:30:24] ERROR: Failed to start server: Cannot find module './config/serviceAccountKey.json'
+Require stack:
+- D:\crm_fcm\config\firebase.js
+- D:\crm_fcm\server.js
+[2026-06-24 16:30:40] ERROR: Failed to start server: Cannot find module './config/serviceAccountKey.json'
+Require stack:
+- D:\crm_fcm\config\firebase.js
+- D:\crm_fcm\server.js
+[2026-06-24 16:34:30] ERROR: Failed to start server: Cannot find module './config/serviceAccountKey.json'
+Require stack:
+- D:\crm_fcm\config\firebase.js
+- D:\crm_fcm\server.js
+[2026-06-24 16:36:28] ERROR: Failed to start server: Cannot read properties of undefined (reading 'cert')
+[2026-06-24 17:05:00] ERROR: [CRON] Callback Reminders failed: Invalid column name 'reminder_sent'.
+[2026-06-24 17:05:00] ERROR: [CRON] Reminder Due Alerts failed: Invalid column name 'reminder_sent'.
+[2026-06-24 17:40:30] ERROR: [CRON] Callback Reminders failed: operation timed out for an unknown reason
+[2026-06-24 17:40:30] ERROR: [CRON] Appointment Reminders failed: operation timed out for an unknown reason
+[2026-06-24 17:40:30] ERROR: [CRON] Reminder Due Alerts failed: operation timed out for an unknown reason
+[2026-07-02 17:02:53] ERROR: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+[2026-07-02 17:05:00] ERROR: [CRON] Callback Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:05:00] ERROR: [CRON] Reminder Due Alerts failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:10:00] ERROR: [CRON] Callback Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:10:00] ERROR: [CRON] Appointment Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:10:00] ERROR: [CRON] Reminder Due Alerts failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:15:00] ERROR: [CRON] Reminder Due Alerts failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:15:00] ERROR: [CRON] Callback Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:20:00] ERROR: [CRON] Appointment Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:20:00] ERROR: [CRON] Callback Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 19:13:09] ERROR: FCM sendToDevice failed: admin is not defined
+[2026-07-02 19:14:55] ERROR: FCM sendToDevice failed: admin is not defined
+[2026-07-02 19:20:15] ERROR: sendCustomNotification error: consiole is not defined
+[2026-07-02 19:20:55] ERROR: FCM sendToDevice failed: admin is not defined
+[2026-07-02 19:23:02] ERROR: FCM sendToDevice failed: admin is not defined
+[2026-07-02 19:24:01] ERROR: sendCustomNotification error: admin is not defined
+[2026-07-02 19:26:27] ERROR: FCM sendToDevice failed: admin.messaging is not a function
+[2026-07-02 19:27:48] ERROR: FCM sendToDevice failed: admin.messaging is not a function
+[2026-07-02 19:30:01] ERROR: FCM sendToDevice failed: admin.messaging is not a function
+[2026-07-02 19:30:49] ERROR: FCM sendToDevice failed: admin.messaging is not a function
+[2026-07-02 19:32:31] ERROR: FCM sendToDevice failed: admin.messaging is not a function
+[2026-07-02 19:35:35] ERROR: FCM sendToDevice failed: Permission 'cloudmessaging.messages.create' denied on resource '//cloudresourcemanager.googleapis.com/projects/cracrm-53e9b' (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter;errorId=CiQwMTlmMjUzMC0xMjA0LTc2YzYtOWUzOS0xYzc2YjVjMjhjMDASFXByb2plY3RzL2NyYWNybS01M2U5Yg%3D%3D .
+[2026-07-03 13:05:00] ERROR: Unhandled Rejection: ReferenceError: pool is not defined
+[2026-07-03 13:33:37] ERROR: Unhandled Rejection: ReferenceError: pool is not defined
+[2026-07-03 13:35:04] ERROR: Unhandled Rejection: ReferenceError: pool is not defined
+[2026-07-03 13:45:08] ERROR: Unhandled Rejection: ReferenceError: pool is not defined
+[2026-07-03 13:52:28] ERROR: Unhandled Rejection: TypeError: closePool is not a function
+[2026-07-03 16:51:04] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 16:53:04] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 17:13:11] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 17:22:32] ERROR: Unhandled Rejection: TypeError: closePool is not a function
+[2026-07-03 17:22:46] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 17:34:05] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 18:00:07] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 18:00:20] ERROR: Unhandled Rejection: TypeError: closePool is not a function
+[2026-07-03 18:00:35] ERROR: FCM sendToDevice failed: NotRegistered
+[2026-07-04 13:04:32] ERROR: Unhandled Rejection: TypeError: closePool is not a function

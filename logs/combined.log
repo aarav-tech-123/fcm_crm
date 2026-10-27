@@ -1,0 +1,489 @@
+[2026-06-24 16:29:19] ERROR: Failed to start server: Failed to connect to 103.112.15.19:1433 - Could not connect (sequence)
+[2026-06-24 16:30:24] ERROR: Failed to start server: Cannot find module './config/serviceAccountKey.json'
+Require stack:
+- D:\crm_fcm\config\firebase.js
+- D:\crm_fcm\server.js
+[2026-06-24 16:30:40] ERROR: Failed to start server: Cannot find module './config/serviceAccountKey.json'
+Require stack:
+- D:\crm_fcm\config\firebase.js
+- D:\crm_fcm\server.js
+[2026-06-24 16:34:30] ERROR: Failed to start server: Cannot find module './config/serviceAccountKey.json'
+Require stack:
+- D:\crm_fcm\config\firebase.js
+- D:\crm_fcm\server.js
+[2026-06-24 16:36:28] ERROR: Failed to start server: Cannot read properties of undefined (reading 'cert')
+[2026-06-24 17:04:44] INFO: ✅ All notification cron jobs started
+[2026-06-24 17:04:44] INFO: 🚀 CRM Notification Service running on port 5001
+[2026-06-24 17:05:00] INFO: [CRON] Starting: Callback Reminders
+[2026-06-24 17:05:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-06-24 17:05:00] ERROR: [CRON] Callback Reminders failed: Invalid column name 'reminder_sent'.
+[2026-06-24 17:05:00] ERROR: [CRON] Reminder Due Alerts failed: Invalid column name 'reminder_sent'.
+[2026-06-24 17:10:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-06-24 17:10:00] INFO: [CRON] Starting: Callback Reminders
+[2026-06-24 17:10:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-06-24 17:11:31] INFO: SIGINT received. Shutting down gracefully...
+[2026-06-24 17:34:47] INFO: ✅ All notification cron jobs started
+[2026-06-24 17:34:48] INFO: 🚀 CRM Notification Service running on port 5001
+[2026-06-24 17:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-06-24 17:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-06-24 17:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-06-24 17:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-06-24 17:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-06-24 17:40:03] INFO: SIGINT received. Shutting down gracefully...
+[2026-06-24 17:40:03] INFO: 🛑 All notification cron jobs stopped
+[2026-06-24 17:40:30] ERROR: [CRON] Callback Reminders failed: operation timed out for an unknown reason
+[2026-06-24 17:40:30] ERROR: [CRON] Appointment Reminders failed: operation timed out for an unknown reason
+[2026-06-24 17:40:30] ERROR: [CRON] Reminder Due Alerts failed: operation timed out for an unknown reason
+[2026-07-02 17:02:52] INFO: ✅ All notification cron jobs started
+[2026-07-02 17:03:13] INFO: ✅ All notification cron jobs started
+[2026-07-02 17:03:13] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 17:05:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:05:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 17:05:00] ERROR: [CRON] Callback Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:05:00] ERROR: [CRON] Reminder Due Alerts failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:10:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 17:10:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:10:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 17:10:00] ERROR: [CRON] Callback Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:10:00] ERROR: [CRON] Appointment Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:10:00] ERROR: [CRON] Reminder Due Alerts failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:15:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 17:15:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:15:00] ERROR: [CRON] Reminder Due Alerts failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:15:00] ERROR: [CRON] Callback Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:20:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 17:20:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:20:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 17:20:00] ERROR: [CRON] Appointment Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:20:00] ERROR: [CRON] Callback Reminders failed: Invalid column name 'reminder_sent'.
+[2026-07-02 17:25:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 17:25:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 17:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 17:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 17:37:16] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 17:37:30] INFO: ✅ All notification cron jobs started
+[2026-07-02 17:37:30] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 17:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 17:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 17:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 17:50:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 17:50:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:50:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 17:55:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 17:55:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:00:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 18:00:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:00:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:05:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:05:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:10:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 18:10:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:10:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:15:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:15:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:20:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 18:20:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:20:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:25:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:25:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 18:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 18:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:47:08] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 18:47:20] INFO: ✅ All notification cron jobs started
+[2026-07-02 18:47:20] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 18:50:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:50:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 18:50:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:55:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 18:55:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 18:55:37] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 18:56:30] INFO: ✅ All notification cron jobs started
+[2026-07-02 18:56:30] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:00:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 19:00:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 19:00:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 19:03:59] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:04:08] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:04:08] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:05:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 19:05:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 19:07:33] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:07:41] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:07:41] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:10:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 19:10:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 19:10:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 19:11:43] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:11:51] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:11:51] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:12:56] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:13:05] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:13:05] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:13:09] ERROR: FCM sendToDevice failed: admin is not defined
+[2026-07-02 19:14:55] ERROR: FCM sendToDevice failed: admin is not defined
+[2026-07-02 19:15:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 19:15:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 19:20:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 19:20:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 19:20:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 19:20:01] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:20:12] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:20:12] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:20:15] ERROR: sendCustomNotification error: consiole is not defined
+[2026-07-02 19:20:43] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:20:53] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:20:53] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:20:55] ERROR: FCM sendToDevice failed: admin is not defined
+[2026-07-02 19:22:47] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:22:57] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:22:57] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:23:02] ERROR: FCM sendToDevice failed: admin is not defined
+[2026-07-02 19:23:48] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:23:57] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:23:57] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:24:01] ERROR: sendCustomNotification error: admin is not defined
+[2026-07-02 19:25:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 19:25:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 19:26:14] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:26:23] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:26:23] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:26:27] ERROR: FCM sendToDevice failed: admin.messaging is not a function
+[2026-07-02 19:27:35] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:27:43] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:27:43] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:27:48] ERROR: FCM sendToDevice failed: admin.messaging is not a function
+[2026-07-02 19:29:48] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:29:58] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:29:58] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 19:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 19:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 19:30:01] ERROR: FCM sendToDevice failed: admin.messaging is not a function
+[2026-07-02 19:30:39] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:30:48] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:30:48] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:30:49] ERROR: FCM sendToDevice failed: admin.messaging is not a function
+[2026-07-02 19:31:12] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:31:19] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:31:19] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:32:31] ERROR: FCM sendToDevice failed: admin.messaging is not a function
+[2026-07-02 19:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 19:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 19:35:20] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:35:28] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:35:28] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:35:35] ERROR: FCM sendToDevice failed: Permission 'cloudmessaging.messages.create' denied on resource '//cloudresourcemanager.googleapis.com/projects/cracrm-53e9b' (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter;errorId=CiQwMTlmMjUzMC0xMjA0LTc2YzYtOWUzOS0xYzc2YjVjMjhjMDASFXByb2plY3RzL2NyYWNybS01M2U5Yg%3D%3D .
+[2026-07-02 19:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 19:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-02 19:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 19:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-02 19:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-02 19:45:23] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/ed2a3952-46e4-4c5a-8f36-936a9e94d919
+[2026-07-02 19:45:48] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/3c3c8042-5e72-4c63-af61-3b9a8fbfca0e
+[2026-07-02 19:46:40] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/fecbce04-576c-4c6c-aca5-bb2c470c62ec
+[2026-07-02 19:49:59] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-02 19:50:13] INFO: ✅ All notification cron jobs started
+[2026-07-02 19:50:13] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-02 19:50:33] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-03 12:17:27] INFO: ✅ All notification cron jobs started
+[2026-07-03 12:17:27] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-03 12:20:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 12:20:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 12:20:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 12:25:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 12:25:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 12:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 12:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 12:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 12:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 12:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 12:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 12:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 12:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 12:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 12:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 12:50:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 12:50:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 12:50:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 12:55:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 12:55:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:00:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 13:00:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:00:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:01:39] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/e5ebaf94-c7d9-4754-8e2c-81e84054c7d8
+[2026-07-03 13:03:42] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/c54c80af-5574-463e-b586-53e516f2e516
+[2026-07-03 13:05:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:05:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:05:00] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-03 13:05:00] INFO: 🛑 All notification cron jobs stopped
+[2026-07-03 13:05:00] ERROR: Unhandled Rejection: ReferenceError: pool is not defined
+[2026-07-03 13:05:18] INFO: ✅ All notification cron jobs started
+[2026-07-03 13:05:18] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-03 13:07:20] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/3a1e9a29-2f44-4f2d-bec0-f95df0fa4d25
+[2026-07-03 13:07:24] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/2f7fa0ac-370a-4d98-8e2b-adb46fb166f7
+[2026-07-03 13:07:24] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/999eb8ec-3795-4a7a-a6dd-3c97dbe0085c
+[2026-07-03 13:07:40] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/afef4995-32b2-4698-80bb-27acb478a5c1
+[2026-07-03 13:10:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 13:10:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:10:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:15:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:15:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:20:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 13:20:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:20:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:25:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:25:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 13:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:33:37] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-03 13:33:37] INFO: 🛑 All notification cron jobs stopped
+[2026-07-03 13:33:37] ERROR: Unhandled Rejection: ReferenceError: pool is not defined
+[2026-07-03 13:33:46] INFO: ✅ All notification cron jobs started
+[2026-07-03 13:33:46] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-03 13:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:35:04] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-03 13:35:04] INFO: 🛑 All notification cron jobs stopped
+[2026-07-03 13:35:04] ERROR: Unhandled Rejection: ReferenceError: pool is not defined
+[2026-07-03 13:39:40] INFO: ✅ All notification cron jobs started
+[2026-07-03 13:39:40] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-03 13:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 13:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:45:08] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-03 13:45:08] INFO: 🛑 All notification cron jobs stopped
+[2026-07-03 13:45:08] ERROR: Unhandled Rejection: ReferenceError: pool is not defined
+[2026-07-03 13:46:05] INFO: ✅ All notification cron jobs started
+[2026-07-03 13:46:05] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-03 13:50:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 13:50:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 13:50:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 13:52:28] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-03 13:52:28] INFO: 🛑 All notification cron jobs stopped
+[2026-07-03 13:52:28] ERROR: Unhandled Rejection: TypeError: closePool is not a function
+[2026-07-03 14:26:20] INFO: ✅ All notification cron jobs started
+[2026-07-03 14:26:20] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-03 14:27:43] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/52b9038e-ce74-4c75-89db-991d7c8c9ab1
+[2026-07-03 14:27:53] INFO: FCM sent | MsgID: projects/cracrm-53e9b/messages/354449a1-e292-4910-a37f-0c19920f0c3b
+[2026-07-03 14:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 14:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 14:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 14:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 14:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 14:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 14:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 14:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 14:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 14:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 14:50:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 14:50:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 14:50:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 14:55:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 14:55:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:00:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 15:00:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 15:00:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:05:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 15:05:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:10:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 15:10:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:10:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 15:15:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 15:15:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:20:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 15:20:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 15:20:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:25:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 15:25:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 15:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 15:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 15:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 15:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 15:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 15:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 16:50:50] INFO: ✅ All notification cron jobs started
+[2026-07-03 16:50:50] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-03 16:51:04] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 16:53:04] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 16:55:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 16:55:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:00:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 17:00:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:00:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:05:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:05:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:10:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:10:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 17:10:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:13:11] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 17:15:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:15:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:20:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:20:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 17:20:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:22:32] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-03 17:22:32] INFO: 🛑 All notification cron jobs stopped
+[2026-07-03 17:22:32] ERROR: Unhandled Rejection: TypeError: closePool is not a function
+[2026-07-03 17:22:39] INFO: ✅ All notification cron jobs started
+[2026-07-03 17:22:39] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-03 17:22:46] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 17:25:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:25:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 17:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:34:05] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 17:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 17:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:50:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:50:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 17:50:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 17:55:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 17:55:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:00:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 18:00:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:00:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:00:07] ERROR: FCM sendToDevice failed: Credential implementation provided to initializeApp() via the "credential" property failed to fetch a valid Google OAuth2 access token with the following error: "invalid_grant: Invalid JWT Signature.". There are two likely causes: (1) your server time is not properly synced or (2) your certificate key file has been revoked. To solve (1), re-sync the time on your server. To solve (2), make sure the key ID for your key file is still present at https://console.firebase.google.com/iam-admin/serviceaccounts/project. If not, generate a new key file at https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk.
+[2026-07-03 18:00:20] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-03 18:00:20] INFO: 🛑 All notification cron jobs stopped
+[2026-07-03 18:00:20] ERROR: Unhandled Rejection: TypeError: closePool is not a function
+[2026-07-03 18:00:28] INFO: ✅ All notification cron jobs started
+[2026-07-03 18:00:28] INFO: 🚀 CRM Notification Service running on port 5000
+[2026-07-03 18:00:35] ERROR: FCM sendToDevice failed: NotRegistered
+[2026-07-03 18:00:35] WARN: Invalid FCM token removed.
+[2026-07-03 18:05:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:05:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:10:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 18:10:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:10:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:15:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:15:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:20:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 18:20:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:20:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:25:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:25:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 18:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 18:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:50:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 18:50:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:50:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 18:55:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 18:55:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:00:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:00:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:00:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 19:05:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:05:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:10:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:10:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 19:10:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:15:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:15:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:20:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 19:20:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:20:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:25:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:25:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 19:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 19:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:50:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-03 19:50:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:50:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 19:55:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 19:55:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 20:00:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-03 20:00:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-03 20:00:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 11:30:01] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 11:30:01] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 11:30:01] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 11:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 11:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 11:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 11:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 11:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 11:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 11:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 11:50:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 11:50:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 11:50:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 11:55:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 11:55:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:00:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 12:00:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:00:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:05:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:05:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:10:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:10:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:10:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 12:15:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:15:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:20:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 12:20:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:20:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:25:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:25:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:30:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 12:30:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:30:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:35:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:35:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:40:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 12:40:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:40:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:45:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:45:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:50:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 12:50:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 12:50:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:55:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 12:55:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 13:00:00] INFO: [CRON] Starting: Appointment Reminders
+[2026-07-04 13:00:00] INFO: [CRON] Starting: Callback Reminders
+[2026-07-04 13:00:00] INFO: [CRON] Starting: Reminder Due Alerts
+[2026-07-04 13:04:32] INFO: SIGINT received. Shutting down gracefully...
+[2026-07-04 13:04:32] INFO: 🛑 All notification cron jobs stopped
+[2026-07-04 13:04:32] ERROR: Unhandled Rejection: TypeError: closePool is not a function
